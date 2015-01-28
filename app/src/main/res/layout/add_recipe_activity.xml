@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37ff7f97">
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Header"
+            android:text="Dodaj swój przepis"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:layout_below="@+id/Header"
+            android:hint="Tytuł"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/introduction"
+            android:layout_below="@+id/title"
+            android:hint="Opis"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/steps"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:layout_below="@+id/introduction"
+            android:hint="Kroki"
+            android:gravity="top|left"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ingredients"
+            android:layout_below="@+id/steps"
+            android:hint="Składniki"
+            android:lines="5"
+            android:gravity="top|left"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CookingMinutes"
+            android:layout_below="@+id/ingredients"
+            android:hint="Czas gotowania"
+            android:inputType="number"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PreparationMinutes"
+            android:layout_below="@+id/CookingMinutes"
+            android:hint="Czas przygotowywania"
+            android:inputType="number"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/servings"
+            android:layout_below="@+id/PreparationMinutes"
+            android:hint="Ilość porcji"
+            android:inputType="number"
+            android:textSize="20dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addButton"
+            android:text="Dodaj przepis"
+            android:layout_below="@+id/servings"/>
+
+    </RelativeLayout>
+</ScrollView>

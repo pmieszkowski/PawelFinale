@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#37ff7f97"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/nazwa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Tytuł:"
+            android:textColor="#000"
+            android:textStyle="bold"
+            />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title"
+        android:text="Tytuł"
+
+        />
+
+        <TextView
+            android:id="@+id/opis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Opis:"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/introduction"
+        android:layout_below="@+id/title"
+        android:text="Opis"
+        />
+
+        <TextView
+            android:id="@+id/skladniki"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Składniki:"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ingredients"
+        android:layout_below="@+id/introduction"
+        android:text="skladniki"
+        />
+
+        <TextView
+            android:id="@+id/kroki"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Kroki:"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/steps"
+        android:layout_below="@+id/ingredients"
+        android:text="kroki"
+        />
+
+        <TextView
+            android:id="@+id/porcje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Porcje:"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/servings"
+        android:layout_below="@+id/steps"
+        android:text="Porcje"
+        />
+
+        <TextView
+            android:id="@+id/czasg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Czas gotowania:"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/CookingMinutes"
+        android:layout_below="@+id/servings"
+        android:text="Czas Gotowania"
+        />
+
+        <TextView
+            android:id="@+id/czasp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Czas przygotowania:"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/PreparationMinutes"
+        android:layout_below="@+id/CookingMinutes"
+        android:text="Czas Przygotowywania"
+        />
+    </LinearLayout>
+</ScrollView>
